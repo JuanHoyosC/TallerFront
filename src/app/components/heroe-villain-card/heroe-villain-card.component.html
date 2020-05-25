@@ -1,0 +1,14 @@
+<div class="card animated fadeIn fast">
+
+    <img [src]="villainHeroe.img" class="card-img-top" [alt]="villainHeroe.nombre">
+    <div class="card-body">
+        <h5 class="card-title">{{villainHeroe.nombre}}</h5>
+        <p class="card-text">{{villainHeroe.bio}}</p>
+        <p class="card-text"><small class="text-muted">{{villainHeroe.aparicion}}</small></p>
+    </div>
+
+    <div class = "center">
+        <img *ngIf="villainHeroe.casa == 'DC' " src="../../../assets/img/dc.jfif" alt="">
+        <img *ngIf="villainHeroe.casa == 'Marvel' " src="../../../assets/img/marvel.png" alt="">
+    </div>
+</div>

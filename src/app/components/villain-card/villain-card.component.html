@@ -1,0 +1,10 @@
+<div class="card animated fadeIn fast">
+
+    <img [src]="villains.img" class="card-img-top" [alt]="villains.nombre" style="width: 90%;">
+    <div class="card-body">
+        <h5 class="card-title">{{villains.nombre}}</h5>
+        <p class="card-text">{{villains.bio}}</p>
+        <p class="card-text"><small class="text-muted">{{villains.aparicion}}</small></p>
+        <button type="button" (click)="verVillano()" class="btn btn-outline-primary btn-block">Ver mas...</button>
+    </div>
+</div>
